@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garage Transit — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --asphalt: #1A1A2E;
+      --garage: #16213E;
+      --steel: #0F3460;
+      --orange: #E94560;
+      --chrome: #C0C0C0;
+      --smoke: #6B7280;
+      --frost: #F3F4F6;
+    }
+
+    body {
+      background-color: var(--asphalt);
+      color: var(--frost);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--orange); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      background: var(--garage);
+      border-bottom: 1px solid var(--steel);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .nav-brand span {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--frost);
+    }
+
+    .nav-back {
+      font-size: 14px;
+      color: var(--chrome);
+    }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--frost);
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--smoke);
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--frost);
+      margin: 36px 0 12px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--chrome);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: var(--chrome);
+      margin-bottom: 8px;
+    }
+
+    .highlight-box {
+      background: var(--garage);
+      border: 1px solid var(--steel);
+      border-left: 3px solid var(--orange);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--chrome);
+    }
+
+    footer {
+      background: var(--garage);
+      border-top: 1px solid var(--steel);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      color: var(--smoke);
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      color: var(--smoke);
+      font-size: 13px;
+      margin: 0 12px;
+    }
+
+    footer a:hover { color: var(--orange); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 26px; }
+      h2 { font-size: 18px; }
+    }
+  
+</head>
+<body>
+
+  </style><nav>
+    <div class="nav-brand">
+      <img src="icon.png" alt="Garage Transit" />
+      <span>Garage Transit</span>
+    </div>
+    <a class="nav-back" href="index.html">← Back to Support</a>
+  </nav>
+
+  <div class="content">
+
+    <div class="section-label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 2025</p>
+
+    <div class="highlight-box">
+      <p>Garage Transit is designed with privacy as a default. All your vehicle data is stored locally on your device. We do not collect, transmit or sell your personal information.</p>
+    </div>
+
+    <h2>1. Information We Collect</h2>
+    <p>Garage Transit does not collect any personal information. All data you enter — vehicle details, service records, fuel logs, photos and reminders — is stored exclusively on your device using the iOS file system and local app storage.</p>
+
+    <h2>2. Data Storage</h2>
+    <p>All app data is stored locally:</p>
+    <ul>
+      <li>Vehicle profiles, service records and fuel logs — device storage via iOS FileManager</li>
+      <li>Photos and voice notes — device file system, never uploaded</li>
+      <li>App settings and preferences — local UserDefaults on your device</li>
+      <li>OpenAI API key (if provided) — stored locally in UserDefaults, never transmitted to us</li>
+    </ul>
+
+    <h2>3. AI Mechanic Feature</h2>
+    <p>When you use the AI Mechanic feature, a prompt is constructed locally on your device. This prompt includes your vehicle details and recent service history. It is sent directly from your device to OpenAI's API using your own API key.</p>
+    <p>We do not have access to your queries or responses. Please review <a href="https://openai.com/privacy" target="_blank">OpenAI's Privacy Policy</a> for information on how they handle API data.</p>
+
+    <h2>4. Device Permissions</h2>
+    <p>The app requests the following permissions solely to provide app functionality:</p>
+    <ul>
+      <li><strong>Camera</strong> — VIN scanning and receipt photography</li>
+      <li><strong>Photo Library</strong> — attaching and saving vehicle photos</li>
+      <li><strong>Microphone</strong> — voice notes and AI voice input</li>
+      <li><strong>Location</strong> — auto-filling workshop/station address in records</li>
+      <li><strong>Calendar</strong> — creating service reminder events</li>
+      <li><strong>Contacts</strong> — importing mechanic or insurer contact details</li>
+      <li><strong>Bluetooth</strong> — connecting to OBD-II adapters</li>
+      <li><strong>Face ID</strong> — optional app lock for your privacy</li>
+    </ul>
+    <p>No data accessed through these permissions is transmitted to any server or third party by Garage Transit.</p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>Garage Transit does not integrate any analytics SDKs, advertising networks or third-party tracking services. The only optional third-party connection is OpenAI's API, initiated directly from your device when you choose to use the AI feature.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>Garage Transit is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
+
+    <h2>7. Data Deletion</h2>
+    <p>You can delete all app data at any time from within the app: go to <strong>More → Settings → Data → Erase All Data</strong>. This permanently removes all records, photos and settings from your device. Uninstalling the app also removes all locally stored data.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <p>
+      📧 <a href="mailto:frankmelort@gmail.com">frankmelort@gmail.com</a><br />
+      📞 <a href="tel:79158185236">79158185236</a>
+    </p>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Garage Transit. All rights reserved.</p>
+    <div>
+      <a href="index.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
